@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #f0b1cc;
+    background: linear-gradient(30deg, rgba(240, 177, 204, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    height: 70%;
+    width: 20%;
+    /* background-color:#e9eaea; */
+    background-color: rgb(235, 221, 204);
+    border-radius: 10px;
+    box-shadow: 9px 9px 9px 0px rgba(0, 0, 0, 0.3);
+}
+nav{
+    height: 15%;
+    width: 100%;
+    padding: 10px 10px;
+    background-color:aliceblue;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav h1{
+    font-size: medium;
+}
+nav i{
+    font-size: large;
+}
+nav .icon{
+    padding: 8px;
+    border-radius: 50px;
+    background-color:none;
+}
+nav .icon:hover{
+    font-size: large;
+    background-color: black;
+    color: white;
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+.date{
+    height: 10%;
+    width: 100%;
+    padding: 6px 10px;
+}
+.date h4{
+    font-weight: 300;
+}
+.main{
+    height: 75%;
+    width: 100%;
+    padding: 10px;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.block{
+    height: 10%;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px ;
+    box-shadow: 0px 1px 1px 1px rgba(33, 33, 33, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 5px;
+}
+.block i{
+    font-size: smaller;
+}
+.block p{
+    font-size: 12px;
+}
+.sub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.block1{
+    height: 10%;
+    border-radius: 5px;
+    border: 1px ;
+    margin-bottom: 15px;
+    box-shadow: 0px 1px 1px 1px rgba(33, 33, 33, 0.3);
+    display: flex;
+    justify-content: center;
+    color: rgb(117, 117, 117);
+    align-items: center;
+    gap: 5px;
+}
+.block1 i{
+    font-size: smaller;
+}
+.block1 p{
+    font-size: 12px;
+}
+.block1 p{
+ text-decoration: line-through;
+}
+#plus{
+position: absolute;
+right: 42%;
+bottom: 18%;
+font-size:xx-large;
+cursor: pointer;
+transition: all 0.5s;
+}
+#minus{
+position: absolute;
+right: 42%;
+bottom: 18%;
+font-size:xx-large;
+cursor: pointer;
+transition: all 0.5s;   
+}
+.main::-webkit-scrollbar {
+    width: 8px;
+}
+.main::-webkit-scrollbar-track {
+    background: #f0f0f0; 
+    border-radius: 10px;
+}
+
+.main::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+.main::-webkit-scrollbar-thumb:hover {
+    background: #555;   
+}
+#popup{
+    height: 16%;
+    width: 15%;
+    background-color: #F0F8FF;
+    border-radius: 10px;
+    position: absolute;
+    right: 42.5%;
+    bottom: 40%;
+    padding: 16px;
+}
+#popup input{
+    background-color: transparent;
+    color: black;
+    outline: none;
+    padding:  3.2px 6.5px;
+    border: 1px solid #4f4f4f;
+    border-radius: 3px;
+    margin-bottom: 6.5px;
+}
+#popup button{
+    background-color: black;
+    color: bisque;
+    padding: 4.6px 8px;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+#popup button:hover{
+    background-color: transparent;
+    color: black ;
+}
+.inactive{
+    display: none;
+}
