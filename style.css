@@ -78,7 +78,7 @@ nav .icon:hover{
     margin-bottom: 15px;
     gap: 5px;
 }
-.block i{
+.block input{
     font-size: smaller;
 }
 .block p{
@@ -94,10 +94,11 @@ nav .icon:hover{
     height: 10%;
     border-radius: 5px;
     border: 1px ;
+    padding: 10px;
     margin-bottom: 15px;
     box-shadow: 0px 1px 1px 1px rgba(33, 33, 33, 0.3);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     color: rgb(117, 117, 117);
     align-items: center;
     gap: 5px;
@@ -176,4 +177,106 @@ transition: all 0.5s;
 }
 .inactive{
     display: none;
+}
+@media screen and (min-width: 100px) and (max-width: 512px) {
+   .container{
+    height: 70%;
+    width: 80%;
+   } 
+   #plus{
+    right: 18%;
+    bottom: 20%;
+   }
+   #popup{
+    height: 14%;
+    width: 55%;
+    right: 22.5%;
+    bottom: 40%;
+}
+}
+@media screen and (min-width: 513px) and (max-width: 913px) {
+    .container{
+    height: 70%;
+    width: 50%;
+   } 
+   .main{
+    padding: 16px;
+   }
+    #plus{
+    right: 30%;
+    bottom: 20%;
+   }
+    #popup{
+    height: 10%;
+    width: 30%;
+    right: 34.5%;
+    bottom: 40%;
+   }
+     .date h4{
+    font-size: 25px;
+   }
+   .date{
+    padding: 24px;
+   }
+      nav h1{
+    font-size: x-large;
+   }
+   nav i{
+    font-size: xx-large;
+   }
+   nav .icon{
+    padding: 15px;
+    border-radius: 40px;
+    background-color:none;
+}
+nav{
+    height: 15%;
+    width: 100%;
+    padding: 15px 15px;
+}
+}
+@media screen and (min-width: 914px) and (max-width: 1220px) {
+    .container{
+    height: 70%;
+    width: 60%;
+   }
+   nav h1{
+    font-size: x-large;
+   }
+   nav i{
+    font-size: xx-large;
+   }
+   .main{
+    padding: 26px;
+   }
+    #plus{
+    right: 24%;
+    bottom: 20%;
+    font-size:70px;
+   }
+    #popup{
+    height: 10%;
+    width: 25%;
+    right: 34.5%;
+    bottom: 40%;
+   }
+   #popup input{
+    padding:  5px 8px;
+}
+   #popup button{
+    padding: 7px 15px;
+}
+  .date h4{
+    font-size: 30px;
+}
+   .date{
+    padding: 24px;
+   }
+   .block p{
+    font-size: 22px;
+}
+   .block1 p{
+    font-size: 22px;
+}
+
 }
