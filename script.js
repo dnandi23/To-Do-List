@@ -19,7 +19,8 @@ monthDate.innerHTML = `${currentMonth} ${currentDate}`
 // প্লাস আইকনে ক্লিক ইভেন্ট
 pls.addEventListener("click", () => {
   let existingPopup = document.querySelector("#popup")
-
+  console.log(existingPopup);
+  
   // যদি popup আগে থেকেই থাকে, তাহলে সেটাকে সরিয়ে দাও এবং প্লাস আইকন দেখাও
   if (existingPopup) {
     existingPopup.remove()
@@ -59,5 +60,7 @@ pls.addEventListener("click", () => {
     document.querySelector("#popup").remove()
     pls.classList.remove("fa-circle-minus")
     pls.classList.add("fa-circle-plus")
+
+    // To show the save data
   })
 })
