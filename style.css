@@ -1,282 +1,282 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html,body{
-    height: 100%;
-    width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: #f0b1cc;
-    background: linear-gradient(30deg, rgba(240, 177, 204, 1) 0%, rgba(148, 187, 233, 1) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #f0b1cc;
+  background: linear-gradient(
+    30deg,
+    rgba(240, 177, 204, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.container{
-    height: 70%;
-    width: 20%;
-    /* background-color:#e9eaea; */
-    background-color: rgb(235, 221, 204);
-    border-radius: 10px;
-    box-shadow: 9px 9px 9px 0px rgba(0, 0, 0, 0.3);
+.container {
+  position: relative;
+  height: 70%;
+  width: 20%;
+  background-color: rgb(235, 221, 204);
+  border-radius: 10px;
+  box-shadow: 9px 9px 9px 0px rgba(0, 0, 0, 0.3);
 }
-nav{
-    height: 15%;
-    width: 100%;
-    padding: 10px 10px;
-    background-color:aliceblue;
-    border-radius: 10px 10px 0px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+nav {
+  height: 15%;
+  width: 100%;
+  padding: 10px 10px;
+  background-color: aliceblue;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-nav h1{
-    font-size: medium;
+nav h1 {
+  font-size: medium;
 }
-nav i{
-    font-size: large;
+nav i {
+  font-size: large;
 }
-nav .icon{
-    padding: 8px;
-    border-radius: 50px;
-    background-color:none;
+nav .icon {
+  padding: 8px;
+  border-radius: 50px;
+  background-color: none;
 }
-nav .icon:hover{
-    font-size: large;
-    background-color: black;
-    color: white;
-    transition: all 0.5s;
-    cursor: pointer;
-
+nav .icon:hover {
+  font-size: large;
+  background-color: black;
+  color: white;
+  transition: all 0.5s;
+  cursor: pointer;
 }
-.date{
-    height: 10%;
-    width: 100%;
-    padding: 6px 10px;
+.date {
+  height: 10%;
+  width: 100%;
+  padding: 6px 10px;
 }
-.date h4{
-    font-weight: 300;
+.date h4 {
+  font-weight: 300;
 }
-.main{
-    height: 75%;
-    width: 100%;
-    padding: 10px;
-    overflow-y: scroll;
-    position: relative;
+.main {
+  height: 75%;
+  width: 100%;
+  padding: 10px;
+  overflow-y: scroll;
+  position: relative;
 }
-
-.block{
-    height: 10%;
-    border-radius: 5px;
-    padding: 10px;
-    border: 1px ;
-    box-shadow: 0px 1px 1px 1px rgba(33, 33, 33, 0.3);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-    gap: 5px;
+.block {
+  height: 10%;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px;
+  box-shadow: 0px 1px 1px 1px rgba(33, 33, 33, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 5px;
 }
-.block input{
-    font-size: smaller;
+.block input {
+  font-size: smaller;
 }
-.block p{
-    font-size: 12px;
+.block p {
+  font-size: 12px;
 }
-.sub{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+.sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
-.block1{
-    height: 10%;
-    border-radius: 5px;
-    border: 1px ;
-    padding: 10px;
-    margin-bottom: 15px;
-    box-shadow: 0px 1px 1px 1px rgba(33, 33, 33, 0.3);
-    display: flex;
-    justify-content: space-between;
-    color: rgb(117, 117, 117);
-    align-items: center;
-    gap: 5px;
+.block1 {
+  height: 10%;
+  border-radius: 5px;
+  border: 1px;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0px 1px 1px 1px rgba(33, 33, 33, 0.3);
+  display: flex;
+  justify-content: space-between;
+  color: rgb(117, 117, 117);
+  align-items: center;
+  gap: 5px;
 }
-.block1 i{
-    font-size: smaller;
+.block1 i {
+  font-size: smaller;
 }
-.block1 p{
-    font-size: 12px;
+.block1 p {
+  font-size: 12px;
 }
-.block1 p{
- text-decoration: line-through;
+.block1 p {
+  text-decoration: line-through;
 }
-#plus{
-position: absolute;
-right: 42%;
-bottom: 18%;
-font-size:xx-large;
-cursor: pointer;
-transition: all 0.5s;
+#plus {
+  position: absolute;
+  right: 2%;
+  bottom: 5%;
+  font-size: xx-large;
+  cursor: pointer;
+  transition: all 0.5s;
 }
-#minus{
-position: absolute;
-right: 42%;
-bottom: 18%;
-font-size:xx-large;
-cursor: pointer;
-transition: all 0.5s;   
+#minus {
+  position: absolute;
+  right: 42%;
+  bottom: 18%;
+  font-size: xx-large;
+  cursor: pointer;
+  transition: all 0.5s;
 }
 .main::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
 .main::-webkit-scrollbar-track {
-    background: #f0f0f0; 
-    border-radius: 10px;
+  background: #f0f0f0;
+  border-radius: 10px;
 }
 
 .main::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 10px;
+  background: #888;
+  border-radius: 10px;
 }
 .main::-webkit-scrollbar-thumb:hover {
-    background: #555;   
+  background: #555;
 }
-#popup{
-    height: 16%;
-    width: 15%;
-    background-color: #F0F8FF;
-    border-radius: 10px;
-    position: absolute;
-    right: 42.5%;
-    bottom: 40%;
-    padding: 16px;
+#popup {
+  height: fit-content;
+  width: fit-content;
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 16px;
 }
-#popup input{
-    background-color: transparent;
-    color: black;
-    outline: none;
-    padding:  3.2px 6.5px;
-    border: 1px solid #4f4f4f;
-    border-radius: 3px;
-    margin-bottom: 6.5px;
+#popup input {
+  background-color: transparent;
+  color: black;
+  outline: none;
+  padding: 3.2px 6.5px;
+  border: 1px solid #4f4f4f;
+  border-radius: 3px;
+  margin-bottom: 6.5px;
 }
-#popup button{
-    background-color: black;
-    color: bisque;
-    padding: 4.6px 8px;
-    border: 1px solid black;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: all 0.5s;
+#popup button {
+  background-color: black;
+  color: bisque;
+  padding: 4.6px 8px;
+  border: 1px solid black;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.5s;
 }
-#popup button:hover{
-    background-color: transparent;
-    color: black ;
+#popup button:hover {
+  background-color: transparent;
+  color: black;
 }
-.inactive{
-    display: none;
-}
+/* .inactive {
+  display: none;
+} */
 @media screen and (min-width: 100px) and (max-width: 512px) {
-   .container{
+  .container {
     height: 70%;
     width: 80%;
-   } 
-   #plus{
+  }
+  #plus {
     right: 18%;
     bottom: 20%;
-   }
-   #popup{
+  }
+  #popup {
     height: 14%;
     width: 55%;
     right: 22.5%;
     bottom: 40%;
-}
+  }
 }
 @media screen and (min-width: 513px) and (max-width: 913px) {
-    .container{
+  .container {
     height: 70%;
     width: 50%;
-   } 
-   .main{
+  }
+  .main {
     padding: 16px;
-   }
-    #plus{
+  }
+  #plus {
     right: 30%;
     bottom: 20%;
-   }
-    #popup{
+  }
+  #popup {
     height: 10%;
     width: 30%;
     right: 34.5%;
     bottom: 40%;
-   }
-     .date h4{
-    font-size: 25px;
-   }
-   .date{
+  }
+  .date h4 {
+    font-size: 14px;
+  }
+  .date {
     padding: 24px;
-   }
-      nav h1{
-    font-size: x-large;
-   }
-   nav i{
-    font-size: xx-large;
-   }
-   nav .icon{
-    padding: 15px;
+  }
+  nav i {
+    font-size: 1rem;
+  }
+  nav .icon {
+    padding: 6px;
     border-radius: 40px;
-    background-color:none;
-}
-nav{
+    background-color: none;
+  }
+  nav {
     height: 15%;
     width: 100%;
     padding: 15px 15px;
-}
+  }
 }
 @media screen and (min-width: 914px) and (max-width: 1220px) {
-    .container{
+  .container {
     height: 70%;
     width: 60%;
-   }
-   nav h1{
+  }
+  nav h1 {
     font-size: x-large;
-   }
-   nav i{
+  }
+  nav i {
     font-size: xx-large;
-   }
-   .main{
+  }
+  .main {
     padding: 26px;
-   }
-    #plus{
+  }
+  #plus {
     right: 24%;
     bottom: 20%;
-    font-size:70px;
-   }
-    #popup{
+    font-size: 70px;
+  }
+  #popup {
     height: 10%;
     width: 25%;
     right: 34.5%;
     bottom: 40%;
-   }
-   #popup input{
-    padding:  5px 8px;
-}
-   #popup button{
+  }
+  #popup input {
+    padding: 5px 8px;
+  }
+  #popup button {
     padding: 7px 15px;
-}
-  .date h4{
+  }
+  .date h4 {
     font-size: 30px;
-}
-   .date{
+  }
+  .date {
     padding: 24px;
-   }
-   .block p{
+  }
+  .block p {
     font-size: 22px;
-}
-   .block1 p{
+  }
+  .block1 p {
     font-size: 22px;
-}
-
+  }
 }
