@@ -2,12 +2,34 @@ let pls = document.querySelector("#plus") // প্লাস আইকন
 let container = document.querySelector(".container")
 let weekday = document.querySelector("#weekday")
 let monthDate = document.querySelector("#monthDate")
+let todoContainer = document.querySelector(".main")
 let todorecords = {} // কাজগুলো সংরক্ষণ করার জন্য
 
 // তারিখ সেট করা
 let date = new Date()
-let weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-let months = ["Jan", "Feb", "Mar", "April", "May", "Jun", "July", "Aug", "Sept", "Oct", "Nov", "Dec"]
+let weekdays = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+]
+let months = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "April",
+  "May",
+  "Jun",
+  "July",
+  "Aug",
+  "Sept",
+  "Oct",
+  "Nov",
+  "Dec",
+]
 
 let day = weekdays[date.getDay()]
 let currentMonth = months[date.getMonth()]
@@ -19,8 +41,7 @@ monthDate.innerHTML = `${currentMonth} ${currentDate}`
 // প্লাস আইকনে ক্লিক ইভেন্ট
 pls.addEventListener("click", () => {
   let existingPopup = document.querySelector("#popup")
-  console.log(existingPopup);
-  
+
   // যদি popup আগে থেকেই থাকে, তাহলে সেটাকে সরিয়ে দাও এবং প্লাস আইকন দেখাও
   if (existingPopup) {
     existingPopup.remove()
@@ -62,5 +83,21 @@ pls.addEventListener("click", () => {
     pls.classList.add("fa-circle-plus")
 
     // To show the save data
+    addTodo()
   })
 })
+
+function addTodo() {
+  let id = Date.now()
+
+  todoContainer.insertAdjacentHTML(
+    "beforeend",
+    `<div class="block" data-id=${id}>
+    <div class="sub">
+      <input type="radio"/>
+      <p>${todorecords.task}</p>
+    </div>
+    <p>${todorecords.date}</p>
+  </div>`
+  )
+}
