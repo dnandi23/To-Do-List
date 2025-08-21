@@ -66,8 +66,8 @@ nav .icon:hover {
   height: 75%;
   width: 100%;
   padding: 10px;
-  overflow-y: scroll;
-  position: relative;
+  overflow-y: auto; 
+ position: relative;
 }
 .block {
   height: 10%;
@@ -182,18 +182,18 @@ nav .icon:hover {
 /* .inactive {
   display: none;
 } */
-@media screen and (min-width: 100px) and (max-width: 512px) {
+@media screen and (min-width: 400px) and (max-width: 512px) {
   .container {
     height: 70%;
     width: 80%;
   }
   #plus {
-    right: 18%;
-    bottom: 20%;
+    right: 8%;
+    bottom: 10%;
   }
   #popup {
-    height: 14%;
-    width: 55%;
+    height: fit-content;
+    /* width: 62%; */
     right: 22.5%;
     bottom: 40%;
   }
@@ -207,12 +207,12 @@ nav .icon:hover {
     padding: 16px;
   }
   #plus {
-    right: 30%;
-    bottom: 20%;
+    right: 8%;
+    bottom: 10%;
   }
   #popup {
-    height: 10%;
-    width: 30%;
+    height: fit-content;
+    /* width: 55%; */
     right: 34.5%;
     bottom: 40%;
   }
@@ -256,10 +256,15 @@ nav .icon:hover {
     font-size: 70px;
   }
   #popup {
-    height: 10%;
-    width: 25%;
+    height: fit-content;
+    /* width: 25%; */
     right: 34.5%;
     bottom: 40%;
+  }
+  #plus{
+    right: 6%;
+    bottom: 10%;
+    font-size: 30px;
   }
   #popup input {
     padding: 5px 8px;
@@ -280,3 +285,103 @@ nav .icon:hover {
     font-size: 22px;
   }
 }
+@media screen and (min-width: 100px) and (max-width: 399px){
+  .container {
+    height: 70%;
+    width: 80%;
+  }
+  #plus {
+    right: 8%;
+    bottom: 10%;
+  }
+  #popup {
+    height: fit-content;
+    /* width: 70%; */
+    right: 22.5%;
+    bottom: 40%;
+  }
+}
+@media screen and (min-width: 540px) and (max-width: 720px){
+  #popup {
+    height: fit-content;
+    /* width: 80%; */
+    right: 22.5%;
+    bottom: 40%;
+  }
+}
+@media screen and (min-width: 912px) and (max-width: 1000px){
+  #popup {
+    height: fit-content;
+    /* width: 50%; */
+    right: 22.5%;
+    bottom: 40%;  
+}
+ .date h4{
+  font-size: larger;
+}
+nav h1{
+  font-size: 30px;
+}
+nav .icon i{
+  font-size: 28px ;
+}
+}
+@media screen and (min-width: 1001px) and (max-width: 1022px){
+   .date h4{
+  font-size: larger;
+   }
+  nav h1{
+  font-size: 30px;
+}
+nav .icon i{
+  font-size: 28px ;
+}
+}
+
+@media screen and (min-width: 852px) and (max-width: 900px){
+ .date h4{
+  font-size: larger;
+}
+nav h1{
+  font-size: 30px;
+}
+nav .icon i{
+  font-size: 28px ;
+}
+}
+@media screen and (min-width: 1023px) and (max-width: 1279px){
+  #popup {
+    height: fit-content;
+    /* width: 35%; */
+    right: 22.5%;
+    bottom: 40%;  
+}
+ .date h4{
+  font-size: larger;
+}
+  #plus {
+    right: 4%;
+    bottom: 10%;
+      font-size: 35px;
+  }
+
+}
+@media screen and (min-width: 343px) and (max-width: 350px){
+  #popup {
+    height: fit-content;
+    /* width: 70%; */
+    right: 25%;
+    bottom: 40%;  
+}
+#popup input {
+  background-color: transparent;
+  color: black;
+  outline: none;
+  padding: 3.2px 2px;
+  border: 1px solid #4f4f4f;
+  border-radius: 3px;
+  margin-bottom: 6.5px;
+}
+
+}
+
